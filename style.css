@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+    box-sizing: border-box;
+}
+/* navbar */
+nav {
+     width: 100%;
+    padding: 20px 8%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.logo img{
+    width: 32px;
+}
+.logo h2{
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #0f172a;
+}
+.link {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    
+}
+.link li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    
+}
+.link a:hover {
+    color:#2563EB;
+}
+.btn {
+    background-color:#2563EB;
+    color: white;
+    text-decoration: none;
+    padding: 9px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+}
+.btn:hover{
+    background-color:blue;
+    color: white;
+    
+}
+/* banner */
+header {
+    background-image:linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.20)),
+     url('./image/B14-A01-DevConf-2026/assets/banner.jpg');
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.header-content{
+    max-width: 850px;
+    color: white;
+    text-align: center;
+}
+.header-content h1{
+    color: white;
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+.header-content h1 span{
+    font-style: italic;
+}
+.header-content .btn {
+    margin-top: 60%;
+    padding: 15px 35px;
+    font-size: 28px;
+}
+/* meet speakers */
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.speakers{
+    padding: 70px 0;
+}
+
+.speaker-content{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.speaker-content h2{
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: black;
+}
+.speaker-card-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+
+.speaker-card{
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,.1);
+}
+
+.speaker-card img{
+    width: 100%;
+    display: block;
+}
+
+.speaker-card h4{
+    color: #2563EB;
+    margin: 20px 20px 10px;
+    font-size: 14px;
+}
+
+.speaker-card h3{
+    margin: 0 20px;
+    font-size: 28px;
+}
+
+.speaker-card p{
+    margin: 15px 20px 25px;
+    color: #666;
+}
+/* Pricing Section */
+
+.pricing{
+    padding: 100px 0;
+}
+
+.pricing-content{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.pricing-content h2{
+    font-size: 52px;
+    color: #0F172A;
+    margin-bottom: 15px;
+}
+
+.pricing-content p{
+    color: #6B7280;
+    font-size: 18px;
+}
+
+.pricing-card-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.pricing-card{
+    flex: 1;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 30px;
+    background: white;
+}
+
+.pricing-card h5{
+    color: #6B7280;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.pricing-card h3{
+    font-size: 52px;
+    color: black;
+}
+
+.pricing-card span{
+    color: #6B7280;
+    font-size: 15px;
+}
+
+.pricing-card ul{
+    margin-top: 25px;
+}
+
+.pricing-card ul li{
+    margin-bottom: 16px;
+    color: black;
+    font-size: 15px;
+}
+
+.pricing-card .btn{
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/*  Card 2 */
+
+
+.pricing-card2{
+    flex: 1;
+    background: #0F172A;
+    color: white;
+    border-radius: 12px;
+}
+.pricing-card2 h5{
+    color: #2563EB;
+}
+.pricing-card2 h3{
+    color: white;
+}
+.pricing-card2 span{
+    color: white;
+}
+.pricing-card2 ul li{
+    color: white;
+}
+.commonbtn{
+     background-color:white;
+    color: #2563EB;
+    text-decoration: none;
+    padding: 9px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    border-color: #2563EB;
+    
+    
+}
+.commonbtn2{
+    background-color:#2563EB;
+    color: white;
+    text-decoration: none;
+    padding: 9px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+}
+.commonbtn2:hover{
+    background-color:white;
+    color:blue ;
+}
+.pricing-card .commonbtn{
+     display: block;
+    width: 90%;
+    margin: 30px auto 0;
+    text-align: center;
+}
+.pricing-card .commonbtn2{
+     display: block;
+    width: 90%;
+    margin: 30px auto 0;
+    text-align: center;
+}
+/* Newsletter */
+
+.newsletter{
+    width: 70%;
+    margin: 100px auto 0;
+    background: #0F172A;
+    border-radius: 16px;
+    padding: 60px;
+    text-align: center;
+}
+
+.newsletter h2{
+    color: white;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.newsletter p{
+    color: #CBD5E1;
+    margin-bottom: 35px;
+}
+
+.newsletter form{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.newsletter input{
+    width: 350px;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Footer Logo */
+
+.footer-logo{
+    margin: 70px 40px 30px;
+    display: flex-start;
+}
+.footer-logo img{
+    width: 100px;
+}
+
+/* Footer */
+
+.footer{
+    background: #0F172A;
+    padding: 30px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p{
+    color: #94A3B8;
+}
+
+.footer-link{
+    display: flex;
+    gap: 25px;
+}
+
+.footer-link a{
+    color: #94A3B8;
+    text-decoration: none;
+}
+
+.footer-link a:hover{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
